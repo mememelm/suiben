@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DomaineService } from '../../services';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { map } from 'rxjs/operators';
+import { ToastrService } from "ngx-toastr";
 
 @Component({
   selector: 'app-domaine-cedar',
@@ -13,7 +14,7 @@ export class DomaineCedarComponent implements OnInit {
   domaineFormGroup: FormGroup
   domaines: any
 
-  constructor(private domaineService: DomaineService, private formBuilder: FormBuilder) { }
+  constructor(private domaineService: DomaineService, private formBuilder: FormBuilder, private toastrService: ToastrService) { }
 
   columnDisplayedDomaine = ['domaine']
   dataSourceDomaine = this.domaines
@@ -29,7 +30,9 @@ export class DomaineCedarComponent implements OnInit {
   }
 
   domaineForm(){
-    this.domaineFormGroup = this.formBuilder.group({domaineName: ['', [Validators.required]]})
+    this.domaineFormGroup = this.formBuilder.group({
+      domaineName: ['', [Validators.required, Validators.minLength(5)]]
+    })
   }
 
   resetForm(){
