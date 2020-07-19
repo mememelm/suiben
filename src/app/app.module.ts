@@ -16,7 +16,7 @@ import { AngularFireDatabaseModule } from "@angular/fire/database";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 
 // services
-import { ExploitantService, AuthentificationService, AutoLogoutService } from "./services";
+import { ExploitantService, AuthentificationService, AutoLogoutService, DomaineService } from "./services";
 
 // application view
 import { ExploitantCreateComponent, ExploitantListComponent, ExploitantDetailComponent, ExploitantEditComponent, 
@@ -158,7 +158,8 @@ import { MatDialogConfig } from "@angular/material/dialog";
     AuthentificationService,
     DatePipe,
     AutoLogoutService,  
-    MatDialogConfig
+    MatDialogConfig,
+    DomaineService
     // {provide: LOCALE_ID, useValue: 'en-US'}
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
