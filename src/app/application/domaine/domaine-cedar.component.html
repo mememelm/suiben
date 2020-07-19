@@ -1,7 +1,7 @@
 <form [formGroup]="domaineFormGroup">
     <div mat-dialog-content>
     
-        <input matInput formControlName="domaineName" placeholder="Entrez le cedar">
+        <input matInput formControlName="domaineName" placeholder="Entrez le cedar" required>
         <button mat-button (click)="addDomaine()">Enregistrer</button><br>
     
         <table mat-table  [dataSource]="domaines">
