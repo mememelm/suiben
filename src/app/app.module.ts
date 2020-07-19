@@ -1,7 +1,7 @@
 
 // import { AotCompiler } from "@angular/compiler";
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { DatePipe } from "@angular/common";
 
 import { AppRoutingModule } from './app-routing.module';
@@ -161,6 +161,7 @@ import { MatDialogConfig } from "@angular/material/dialog";
     MatDialogConfig
     // {provide: LOCALE_ID, useValue: 'en-US'}
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
