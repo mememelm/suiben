@@ -1,7 +1,7 @@
 // authentification - user
 export * from './authentification/login/authentification-login.component'
 export * from './authentification/signup/authentification-signup.component'
-export * from './authentification/domaine/domaine-cedar.component'
+export * from './domaine/domaine-cedar.component'
 
 // home
 export * from './home/home.component'
