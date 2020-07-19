@@ -1,0 +1,29 @@
+<div class="modal fade modal_content" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLongTitle">Créer un compte CEDAR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">                      
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input type="text" [(ngModel)]="email" placeholder="email">
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                    </div>
+                    <input type="password" [(ngModel)]="password" placeholder="mot de passe">
+                </div>                
+            </div>
+            <div class="modal-footer">
+                <input type="submit" class="btn signup_btn" (click)="signUpUser()" [disabled]="!email || !password" value="Enregistrer">
+            </div>
+        </div>
+    </div>
+</div>

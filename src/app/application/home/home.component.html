@@ -1,0 +1,71 @@
+<div class="container" style="margin-top: 80px;">
+
+    <div class="home-label animate__animated animate__bounce">
+        <mat-label>SuiBen</mat-label>
+    </div>
+    <br><br>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <mat-card class="card-home shadow animate__animated animate__fadeInRight" [routerLink]="['/exploitantlist']">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>account_box</mat-icon> EXPLOITANTS</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div class="col-md-6 mb-4">
+            <mat-card class="card-home shadow animate__animated animate__fadeInLeft" [routerLink]="['/formationlist']">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>folder_shared</mat-icon> FORMATIONS</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>    
+    </div>    
+    <br>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <mat-card class="card-home shadow animate__animated animate__fadeInRight" [routerLink]="['/innovationlist']">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>create_new_folder</mat-icon> INNOVATIONS</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div class="col-md-6 mb-4">
+            <mat-card class="card-home shadow animate__animated animate__fadeInLeft"  [routerLink]="['/productionlist']">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>layers</mat-icon> PRODUCTIONS</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>   
+    <br>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <mat-card class="card-home shadow animate__animated animate__fadeInUp" [routerLink]="['/evolutionlist']">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>show_chart</mat-icon> EVOLUTIONS</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div class="col-md-6 mb-4">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title><i class="fa fa-clock-o"></i> {{ date }}</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div> 
+    <br>
+    
+    <div class="row">
+        <button mat-fab color="success" (click)="logOut()">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </div>
+
+</div> 
+
+
+

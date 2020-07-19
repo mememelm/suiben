@@ -1,0 +1,16 @@
+.card-home {
+    background-color: #019735;
+    color: #f1f1f1;
+}
+
+.card-home :hover {
+    color: #18C5E5;
+}
+
+.home-label {
+    text-align: center;
+    color: #019735;
+    font-size: 450%;
+    font-weight: 800;
+    font-style: oblique;
+}

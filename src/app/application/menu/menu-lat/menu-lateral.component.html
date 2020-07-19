@@ -1,0 +1,19 @@
+<mat-sidenav-container class="sidenav mat-elevation-z8">
+
+    <mat-sidenav #sidenav class="sidenav-content">
+        <p><button mat-button (click)="sidenav.toggle()"><mat-icon>arrow_back</mat-icon></button></p>
+        <p><button mat-button [routerLink]="['/home']"><mat-icon>home</mat-icon> Accueil</button></p>
+        <p><button mat-button [routerLink]="['/exploitantlist']"><mat-icon>account_box</mat-icon> Exploitants</button></p>
+        <p><button mat-button [routerLink]="['/formationlist']"><mat-icon>folder_shared</mat-icon> Formations</button></p>
+        <p><button mat-button [routerLink]="['/innovationlist']"><mat-icon>create_new_folder</mat-icon> Innovations</button></p>
+        <p><button mat-button [routerLink]="['/productionlist']"><mat-icon>layers</mat-icon> Productions</button></p>
+        <p><button mat-button [routerLink]="['/evolutionlist']"><mat-icon>show_chart</mat-icon> Evolutions</button></p>   
+        <p><button mat-button (click)="logOut()"><mat-icon>logout</mat-icon> Déconnexion</button></p>
+    </mat-sidenav> 
+
+    <mat-sidenav-content>
+        <p><button mat-button (click)="sidenav.toggle()" class="sidenav-btn"><mat-icon>reorder</mat-icon></button></p> 
+    </mat-sidenav-content> 
+
+</mat-sidenav-container>  
+

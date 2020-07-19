@@ -1,0 +1,25 @@
+.sidenav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 25px;
+  height: 100%; 
+  z-index: 0; 
+  background-color:rgba(192,192,192,0.3) 
+}
+
+.sidenav-btn {
+  color: #f1f1f1
+}
+
+.sidenav-content {
+  background-color: #019735;
+  color: #f1f1f1;
+}
+
+.sidenav-content :hover{
+  color: #18C5E5;
+}
+

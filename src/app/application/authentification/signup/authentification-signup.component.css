@@ -1,0 +1,21 @@
+.signup_btn {
+    width: 100%;
+    background: #18C5E5 !important;
+    color: white !important;
+}
+
+.signup_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.modal_content {
+    background: #019735;
+}
+
+.input-group-text {
+    background: #18C5E5 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
