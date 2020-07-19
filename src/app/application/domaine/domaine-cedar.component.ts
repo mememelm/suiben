@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomaineService } from '../../services';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -29,7 +29,7 @@ export class DomaineCedarComponent implements OnInit {
   }
 
   domaineForm(){
-    this.domaineFormGroup = this.formBuilder.group({domaineName: ['']})
+    this.domaineFormGroup = this.formBuilder.group({domaineName: ['', [Validators.required]]})
   }
 
   resetForm(){
