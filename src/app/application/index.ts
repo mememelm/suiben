@@ -3,9 +3,6 @@ export * from './authentification/login/authentification-login.component'
 export * from './authentification/signup/authentification-signup.component'
 export * from './domaine/domaine-cedar.component'
 
-// home
-export * from './home/home.component'
-
 // exploitant
 export * from './exploitant/exploitant-list/exploitant-list.component'
 export * from './exploitant/exploitant-detail/exploitant-detail.component'
@@ -13,6 +10,7 @@ export * from './exploitant/exploitant-create/exploitant-create.component'
 export * from './exploitant/exploitant-edit/exploitant-edit.component'
 
 // menu
+export * from './menu/home/home.component'
 export * from './menu/menu-lat/menu-lateral.component'
 
 // production
@@ -27,4 +25,3 @@ export * from './innovation/innovation-list.component'
 
 // evo
 export * from './evolution/evolution-list.component'
-
