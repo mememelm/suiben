@@ -54,11 +54,7 @@ export class AuthentificationService implements CanActivate{
           this.spinner = true
         }, 5000)        
         this.isAuthentified = true
-        if (email == 'cedar1@gmail.com') {
-          this.router.navigate(['/home'])
-        }else{
-          this.router.navigate(['/domaine'])
-        }       
+        this.router.navigate(['/home'])       
         this.toastrService.success('Bonjour ' + email)       
       })
       .catch(() => {
