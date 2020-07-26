@@ -14,7 +14,6 @@ export class AuthentificationService implements CanActivate{
   userData: Observable<firebase.User>
   isAuthentified = false 
   spinner: boolean = true
-  // actionCodeSettings: firebase.auth.ActionCodeSettings
  
   constructor(
     private angularFireAuth: AngularFireAuth, 
@@ -31,15 +30,9 @@ export class AuthentificationService implements CanActivate{
     }      
   }  
 
-  // sendMailConfirmation(email: string){
-  //   this.angularFireAuth.sendSignInLinkToEmail(email, this.actionCodeSettings)
-  //     .then(() => window.localStorage.setItem('emailForSignIn', email))
-  // }
-
   signUp(email: string, password: string){
     this.angularFireAuth.createUserWithEmailAndPassword(email, password)
       .then(() => {
-        // this.sendMailConfirmation(email)
         this.toastrService.success('Enregistrement réussi')        
       })
       .catch(() => {
