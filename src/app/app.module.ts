@@ -19,7 +19,7 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { ExploitantService, AuthentificationService, AutoLogoutService, DomaineService } from "./services";
 
 // application view
-import { ExploitantCreateComponent, ExploitantListComponent, ExploitantDetailComponent, ExploitantEditComponent, 
+import { ExploitantListComponent, ExploitantDetailComponent,  
           AuthentificationLoginComponent, AuthentificationSignupComponent,
           MenuLateralComponent, EvolutionListComponent,
           HomeComponent, ProductionListComponent, InnovationListComponent,
@@ -79,15 +79,12 @@ import { MatDialogConfig } from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
-    // AotCompiler,
     AppComponent,
-    ExploitantCreateComponent,
     ExploitantListComponent,
     ExploitantDetailComponent,
     AuthentificationLoginComponent,
     AuthentificationSignupComponent,
     MenuLateralComponent,
-    ExploitantEditComponent,
     HomeComponent,
     ProductionListComponent,
     FormationListComponent,

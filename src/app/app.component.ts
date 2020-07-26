@@ -12,7 +12,6 @@ import { AutoLogoutService, AuthentificationService } from "./services";
 export class AppComponent {
   
   title = 'suiben'
-  action = 'action'  
 
   constructor(
     private locationStrategy: LocationStrategy, 
@@ -21,6 +20,5 @@ export class AppComponent {
     this.locationStrategy.onPopState(() => {  
       history.pushState(null, null, window.location.href)
     }); 
-    // this.action = autoLogoutService.val
   }
 }
